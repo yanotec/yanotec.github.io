@@ -13,6 +13,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   letter-spacing: -0.03em;
   margin: 0 0 12px;
+  text-wrap: pretty;
   line-height: 1.1;
 }
 h4, h5, h6 { line-height: 1.25; }
@@ -112,6 +113,7 @@ img, svg { display: block; }
 
 .yn-track { display: flex; gap: 20px; overflow-x: auto; scrollbar-width: none; padding: 4px; }
 .yn-track::-webkit-scrollbar { display: none; }
+.yn-track > * { scroll-snap-align: center; }
 
 .yn-arrow {
   width: 42px;
@@ -219,11 +221,15 @@ img, svg { display: block; }
   justify-content: center;
   min-height: 380px;
 }
-.hero__bars { display: flex; flex-direction: column; gap: 14px; }
-.hero__bar-row { display: flex; align-items: center; gap: 14px; }
-.hero__dot { width: 12px; height: 12px; border-radius: 999px; flex: none; }
-.hero__bar { height: 12px; border-radius: 999px; opacity: 0.25; }
-.hero__caption { font-size: 14px; color: var(--muted); max-width: 32ch; }
+.hero__rows { display: flex; flex-direction: column; gap: 16px; }
+.hero__row { display: flex; flex-direction: column; gap: 7px; }
+.hero__row-top { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+.hero__row-label { font-size: 15px; font-weight: 600; }
+.hero__row-tag { font-size: 13px; color: var(--muted); flex: none; }
+.hero__row-tag--accent { color: var(--green); font-weight: 700; }
+.hero__row-track { height: 10px; border-radius: 999px; opacity: 0.3; }
+.hero__row-track--final { opacity: 0.45; }
+.hero__caption { font-size: 14px; color: var(--muted); max-width: 34ch; }
 
 /* Serviços */
 
@@ -287,6 +293,26 @@ img, svg { display: block; }
 .contact__lead { margin: 0; max-width: 40ch; color: var(--on-accent); }
 .contact__form { display: flex; flex-direction: column; gap: 12px; max-width: 420px; }
 .contact__submit { background: var(--ink); color: var(--surface); }
+
+.yn-wa {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 40;
+  width: 52px;
+  height: 52px;
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 20px rgba(38, 42, 59, 0.18);
+  border: 1.5px solid var(--line);
+  opacity: 0.85;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+.yn-wa:hover { opacity: 1; transform: translateY(-2px); color: var(--green); }
 
 /* Footer */
 
