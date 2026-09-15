@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yanotec — Consultoria digital e software house</title>
+<meta name="description" content="A Yanotec entra junto com a sua equipe para entender o gargalo, desenhar a solução e construir o software que faz o processo andar.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Figtree:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="yn-root" data-theme="claro">
+<div class="container">
+
+  <div class="spectrum" aria-hidden="true">
+    <span style="background:var(--blue)"></span>
+    <span style="background:var(--indigo)"></span>
+    <span style="background:var(--lilac)"></span>
+    <span style="background:var(--red)"></span>
+    <span style="background:var(--orange)"></span>
+    <span style="background:var(--yellow)"></span>
+    <span style="background:var(--green)"></span>
+  </div>
+
+  <nav class="nav">
+    <div class="nav__brand">
+      <svg width="42" height="42" viewBox="0 0 120 120" role="img" aria-label="Yanotec">
+        <path d="M32 30 60 58" fill="none" stroke="var(--blue)" stroke-width="13" stroke-linecap="round"></path>
+        <path d="M88 30 60 58" fill="none" stroke="var(--red)" stroke-width="13" stroke-linecap="round"></path>
+        <path d="M60 58v34" fill="none" stroke="var(--ink)" stroke-width="13" stroke-linecap="round"></path>
+      </svg>
+      <span class="nav__wordmark">Yanotec</span>
+    </div>
+    <div class="nav__links">
+      <a class="yn-nav-link" href="#servicos">Serviços</a>
+      <a class="yn-nav-link" href="#processo">Como trabalhamos</a>
+      <a class="yn-nav-link" href="#sobre">Sobre</a>
+      <a class="yn-btn yn-btn-primary nav__cta" href="#contato">Falar com a gente</a>
+      <button class="yn-btn yn-btn-ghost theme-toggle" id="themeToggle" type="button" aria-label="Mudar para tema escuro" title="Mudar para tema escuro">
+        <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4.2"></circle>
+          <path d="M12 2.6v2.2M12 19.2v2.2M2.6 12h2.2M19.2 12h2.2M5.4 5.4l1.6 1.6M17 17l1.6 1.6M18.6 5.4L17 7M7 17l-1.6 1.6"></path>
+        </svg>
+        <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M20.4 14.6A8.6 8.6 0 0 1 9.4 3.6a8.8 8.8 0 1 0 11 11Z"></path>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero__copy">
+      <span class="pill">Consultoria digital · Software house</span>
+      <h1 class="hero__title">Tecnologia que resolve o problema certo.</h1>
+      <p class="hero__lead">A Yanotec entra junto com a sua equipe para entender o gargalo, desenhar a solução e construir o software que faz o processo andar. Sem camada extra de complexidade.</p>
+      <div class="hero__actions">
+        <a class="yn-btn yn-btn-primary" href="#contato">Agendar um diagnóstico</a>
+        <a class="yn-btn yn-btn-ghost" href="#servicos">Ver serviços</a>
+      </div>
+      <div class="eyebrow">Rápido, simples e eficiente</div>
+    </div>
+    <div class="hero__visual">
+      <div class="hero__blob" aria-hidden="true"></div>
+      <div class="yn-card hero__panel">
+        <div class="eyebrow">Do gargalo ao processo rodando</div>
+        <div class="hero__bars">
+          <div class="hero__bar-row">
+            <span class="hero__dot" style="background:var(--red)"></span>
+            <span class="hero__bar" style="background:var(--red);width:88%"></span>
+          </div>
+          <div class="hero__bar-row">
+            <span class="hero__dot" style="background:var(--orange)"></span>
+            <span class="hero__bar" style="background:var(--orange);width:70%"></span>
+          </div>
+          <div class="hero__bar-row">
+            <span class="hero__dot" style="background:var(--lilac)"></span>
+            <span class="hero__bar" style="background:var(--lilac);width:54%"></span>
+          </div>
+          <div class="hero__bar-row">
+            <span class="hero__dot" style="background:var(--blue)"></span>
+            <span class="hero__bar" style="background:var(--blue);width:38%"></span>
+          </div>
+          <div class="hero__bar-row">
+            <span class="hero__dot" style="background:var(--green)"></span>
+            <span class="hero__bar" style="background:var(--green);width:22%"></span>
+          </div>
+        </div>
+        <div class="hero__caption">Cada etapa encurta o caminho: menos passos manuais, menos espera, mais decisão com dado na mão.</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicos" class="services">
+    <h6 class="yn-kicker">O que fazemos</h6>
+    <h2 class="section-title services__title">Frentes diferentes, um objetivo: processo funcionando.</h2>
+    <p class="section-lead services__lead">Atuamos como consultoria quando o problema ainda não tem nome, como software house quando a solução precisa ser construída, e alocamos especialistas quando o que falta é gente qualificada dentro do seu time.</p>
+    <div class="services__grid">
+      <div class="yn-card service-card" style="border-top-color:var(--blue)">
+        <h4 class="service-card__title">Diagnóstico de processos</h4>
+        <p class="service-card__text">Mapeamos o fluxo real da operação, medimos onde o tempo se perde e priorizamos o que dá retorno primeiro.</p>
+      </div>
+      <div class="yn-card service-card" style="border-top-color:var(--indigo)">
+        <h4 class="service-card__title">Automação e integrações</h4>
+        <p class="service-card__text">Conectamos os sistemas que já existem e eliminamos o trabalho manual que ninguém deveria estar fazendo.</p>
+      </div>
+      <div class="yn-card service-card" style="border-top-color:var(--lilac)">
+        <h4 class="service-card__title">Software sob medida</h4>
+        <p class="service-card__text">Web, mobile e painéis internos desenvolvidos do zero quando nenhuma ferramenta de prateleira resolve.</p>
+      </div>
+      <div class="yn-card service-card" style="border-top-color:var(--red)">
+        <h4 class="service-card__title">Portais e aplicativos</h4>
+        <p class="service-card__text">Canais digitais para cliente, parceiro e time de campo, pensados para quem vai usar todos os dias.</p>
+      </div>
+      <div class="yn-card service-card" style="border-top-color:var(--orange)">
+        <h4 class="service-card__title">Dados para decidir</h4>
+        <p class="service-card__text">Indicadores organizados em um lugar só, para a gestão parar de decidir por intuição e planilha solta.</p>
+      </div>
+      <div class="yn-card service-card" style="border-top-color:var(--yellow)">
+        <h4 class="service-card__title">Infraestrutura e nuvem</h4>
+        <p class="service-card__text">Ambientes organizados, backup que funciona e custo de nuvem sob controle, sem surpresa na fatura.</p>
+      </div>
+      <div class="yn-card service-card" style="border-top-color:var(--green)">
+        <h4 class="service-card__title">Equipe especializada alocada</h4>
+        <p class="service-card__text">Quando falta gente qualificada, colocamos profissionais da área certa atuando junto ao seu time, com a responsabilidade técnica do nosso lado.</p>
+      </div>
+      <div class="yn-card service-card" style="border-top-color:var(--teal)">
+        <h4 class="service-card__title">Suporte e evolução contínua</h4>
+        <p class="service-card__text">Depois da entrega seguimos por perto: ajuste, melhoria e resposta rápida quando a operação precisa.</p>
+      </div>
+      <div class="yn-card service-card" style="border-top-color:var(--ink)">
+        <h4 class="service-card__title">Treinamento do time</h4>
+        <p class="service-card__text">Capacitação prática nas ferramentas e no novo fluxo, para a equipe seguir sozinha depois que a gente sai.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="clientes" class="clients">
+    <h6 class="yn-kicker">Quem já contou com a gente</h6>
+    <h2 class="section-title clients__title">Empresas que confiaram o processo à Yanotec.</h2>
+    <div class="clients__row" id="clientsRow">
+      <button class="yn-arrow" id="prevLogo" aria-label="Anterior" type="button">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"></path></svg>
+      </button>
+      <div class="yn-track" id="clientsTrack">
+        <div class="yn-logo" style="background:#5048e8"><img src="assets/clients/raro.png" alt="Raro Labs" loading="lazy"></div>
+        <div class="yn-logo" style="background:#ffffff"><img src="assets/clients/imaginedone-solid.png" alt="Imaginedone" loading="lazy"></div>
+        <div class="yn-logo" style="background:#0f1820"><img src="assets/clients/vertti-solid.png" alt="Vertti" loading="lazy"></div>
+        <div class="yn-logo" style="background:#98d880"><img src="assets/clients/maxmilhas.png" alt="MaxMilhas" loading="lazy"></div>
+        <div class="yn-logo" style="background:#ffffff"><img src="assets/clients/appolus.png" alt="Appolus Tecnologia" loading="lazy"></div>
+        <div class="yn-logo" style="background:#5048e8" aria-hidden="true"><img src="assets/clients/raro.png" alt="" loading="lazy"></div>
+        <div class="yn-logo" style="background:#ffffff" aria-hidden="true"><img src="assets/clients/imaginedone-solid.png" alt="" loading="lazy"></div>
+        <div class="yn-logo" style="background:#0f1820" aria-hidden="true"><img src="assets/clients/vertti-solid.png" alt="" loading="lazy"></div>
+        <div class="yn-logo" style="background:#98d880" aria-hidden="true"><img src="assets/clients/maxmilhas.png" alt="" loading="lazy"></div>
+        <div class="yn-logo" style="background:#ffffff" aria-hidden="true"><img src="assets/clients/appolus.png" alt="" loading="lazy"></div>
+      </div>
+      <button class="yn-arrow" id="nextLogo" aria-label="Próximo" type="button">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"></path></svg>
+      </button>
+    </div>
+  </section>
+
+  <section id="processo" class="yn-card process">
+    <h6 class="yn-kicker">Como trabalhamos</h6>
+    <h2 class="section-title process__title">Um caminho curto entre conversa e entrega.</h2>
+    <div class="process__grid">
+      <div>
+        <div class="yn-step" style="background:var(--blue)">1</div>
+        <h5 class="step__title">Escuta</h5>
+        <p class="step__text">Conversa com quem opera e com quem decide. Nada de diagnóstico feito de fora.</p>
+      </div>
+      <div>
+        <div class="yn-step" style="background:var(--lilac)">2</div>
+        <h5 class="step__title">Desenho</h5>
+        <p class="step__text">Escopo, prioridades e o retorno esperado de cada etapa, no claro.</p>
+      </div>
+      <div>
+        <div class="yn-step" style="background:var(--orange)">3</div>
+        <h5 class="step__title">Construção</h5>
+        <p class="step__text">Entregas em ciclos curtos, com a equipe usando desde a primeira versão.</p>
+      </div>
+      <div>
+        <div class="yn-step" style="background:var(--green)">4</div>
+        <h5 class="step__title">Acompanhamento</h5>
+        <p class="step__text">Suporte, ajuste e evolução depois que a solução entra no dia a dia.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" class="about">
+    <div class="yn-card about__panel">
+      <svg width="76" height="76" viewBox="0 0 120 120" aria-hidden="true">
+        <path d="M32 30 60 58" fill="none" stroke="var(--blue)" stroke-width="13" stroke-linecap="round"></path>
+        <path d="M88 30 60 58" fill="none" stroke="var(--red)" stroke-width="13" stroke-linecap="round"></path>
+        <path d="M60 58v34" fill="none" stroke="var(--ink)" stroke-width="13" stroke-linecap="round"></path>
+      </svg>
+      <div class="about__motto">Rápido, simples e eficiente</div>
+      <div class="spectrum spectrum--thin" aria-hidden="true">
+        <span style="background:var(--blue)"></span>
+        <span style="background:var(--indigo)"></span>
+        <span style="background:var(--lilac)"></span>
+        <span style="background:var(--red)"></span>
+        <span style="background:var(--orange)"></span>
+        <span style="background:var(--yellow)"></span>
+        <span style="background:var(--green)"></span>
+      </div>
+    </div>
+    <div class="about__copy">
+      <h6 class="yn-kicker">Por que a Yanotec</h6>
+      <h2 class="section-title about__title">Perto o suficiente para entender, técnico o suficiente para entregar.</h2>
+      <p class="section-lead about__lead">Nossa equipe é enxuta por escolha: gente dedicada, tecnicamente competente e que trata o seu processo com o mesmo cuidado que teria com o próprio. Cada projeto recebe atenção integral — nada de fila, nada de aprendiz aprendendo no seu tempo.</p>
+      <div class="about__points">
+        <div class="about__point" style="border-left-color:var(--blue)">
+          <h5 class="about__point-title">Começa pelo problema, não pela ferramenta</h5>
+          <p class="about__point-text">A tecnologia entra depois que o processo está entendido — às vezes a resposta é simples e barata.</p>
+        </div>
+        <div class="about__point" style="border-left-color:var(--lilac)">
+          <h5 class="about__point-title">Um time só, do diagnóstico ao código</h5>
+          <p class="about__point-text">Quem conversa com você é quem constrói. Nada se perde na passagem de bastão.</p>
+        </div>
+        <div class="about__point" style="border-left-color:var(--green)">
+          <h5 class="about__point-title">Escopo e prazo ditos com clareza</h5>
+          <p class="about__point-text">Você sabe o que vem em cada etapa e quanto custa antes de começar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="contact">
+    <div class="contact__grid">
+      <div>
+        <h2 class="section-title contact__title">Conta qual é o gargalo. A primeira conversa é sem custo.</h2>
+        <p class="contact__lead">Em até 45 minutos a gente entende o cenário e diz, com honestidade, se temos como ajudar.</p>
+      </div>
+      <div>
+        <form class="contact__form" action="https://formsubmit.co/contato@yanotec.com.br" method="POST">
+          <input type="hidden" name="_subject" value="Novo contato via site Yanotec">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+          <input class="yn-input" type="text" name="nome" placeholder="Seu nome" required>
+          <input class="yn-input" type="email" name="email" placeholder="E-mail corporativo" required>
+          <input class="yn-input" type="text" name="empresa" placeholder="Empresa">
+          <button class="yn-btn contact__submit" type="submit">Quero um diagnóstico</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__brand">
+      <svg width="30" height="30" viewBox="0 0 120 120" aria-hidden="true">
+        <path d="M32 32 60 60" fill="none" stroke="var(--blue)" stroke-width="17" stroke-linecap="round"></path>
+        <path d="M88 32 60 60" fill="none" stroke="var(--red)" stroke-width="17" stroke-linecap="round"></path>
+        <path d="M60 60v30" fill="none" stroke="var(--ink)" stroke-width="17" stroke-linecap="round"></path>
+      </svg>
+      <span class="footer__tagline">Yanotec — soluções digitais para processos reais</span>
+    </div>
+    <div class="footer__links">
+      <a class="yn-nav-link footer__link" href="#servicos">Serviços</a>
+      <a class="yn-nav-link footer__link" href="#contato">Contato</a>
+      <a class="yn-nav-link footer__link" href="#contato">LinkedIn</a>
+    </div>
+  </footer>
+
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
