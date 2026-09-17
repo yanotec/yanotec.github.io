@@ -87,4 +87,23 @@
 
   prevBtn.addEventListener("click", function () { slide(-1); });
   nextBtn.addEventListener("click", function () { slide(1); });
+
+  // Seletor de canal de contato
+  var tabWhats = document.getElementById("tabWhats");
+  var tabEmail = document.getElementById("tabEmail");
+  var panelWhats = document.getElementById("panelWhats");
+  var panelEmail = document.getElementById("panelEmail");
+  var waFloat = document.getElementById("waFloat");
+
+  function selectChannel(channel) {
+    var whats = channel === "whats";
+    tabWhats.setAttribute("aria-selected", String(whats));
+    tabEmail.setAttribute("aria-selected", String(!whats));
+    panelWhats.hidden = !whats;
+    panelEmail.hidden = whats;
+  }
+
+  tabWhats.addEventListener("click", function () { selectChannel("whats"); });
+  tabEmail.addEventListener("click", function () { selectChannel("email"); });
+  waFloat.addEventListener("click", function () { selectChannel("whats"); });
 })();
